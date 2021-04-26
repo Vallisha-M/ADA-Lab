@@ -11,8 +11,8 @@ void sort(int arr[], int n)
     {
         min = i;
         for (j = i+1; j < n; j++)
-          if (arr[j] < arr[min])
-            min = j;
+            if (arr[j] < arr[min])
+                min = j;
   
         arr[min] = arr[min]+arr[i];
         arr[i] = arr[min]-arr[i];
