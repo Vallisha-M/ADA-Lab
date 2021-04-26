@@ -27,15 +27,18 @@ void generateArray(int arr[],int n) {
 void main() {
     srand(time(NULL));
     int n =0;
-    printf("Enter length of array : ");
-    scanf("%d",&n);
-    int arr[n];
-    generateArray(arr, n);
-    double res;
-    clock_t start, end;
-    start=clock();
-    sort(arr,n);
-    end=clock();
-    res = ((double) (end - start)) / CLOCKS_PER_SEC;
-    printf("\n\nTime taken by bubble sort : %lf\n\n",res);
+    // printf("Enter length of array : ");
+    // scanf("%d",&n);
+    for(int i=100;i<=500;i+=100) {
+     int arr[i];
+     generateArray(arr, i);
+     double res;
+     clock_t start, end;
+     start=clock();
+     sort(arr,i);
+     end=clock();
+     res = ((double) (end - start)) / CLOCKS_PER_SEC;
+     printf("\nn = %d\nTime taken by bubble sort : %lf",i,res);
+    }
+    printf("\n\n");
 }
