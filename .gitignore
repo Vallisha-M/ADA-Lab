@@ -1,3 +1,5 @@
+.vscode/*
+
 *.[Oo]bj
 *.user
 *.aps
@@ -27,3 +29,7 @@ obj/
 Ankh.NoLoad
 
 *.out
+
+*
+!*/
+!*.*
