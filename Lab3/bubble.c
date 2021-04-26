@@ -26,10 +26,18 @@ void generateArray(int arr[],int n) {
 
 void main() {
     srand(time(NULL));
+    printf("-----Bubble Sort-----\n\n");
+
     int n =0;
-    // printf("Enter length of array : ");
-    // scanf("%d",&n);
-    for(int i=100;i<=500;i+=100) {
+    int s,e,step;
+    printf("Enter start length : ");
+    scanf("%d",&s);
+    printf("Enter end length : ");
+    scanf("%d",&e);
+    printf("Enter step length : ");
+    scanf("%d",&step);
+
+    for(int i=s;i<=e;i=i+step) {
      int arr[i];
      generateArray(arr, i);
      double res;
