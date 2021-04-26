@@ -34,3 +34,5 @@ Ankh.NoLoad
 *
 !*/
 !*.*
+.vscode/launch.json
+.vscode/tasks.json
