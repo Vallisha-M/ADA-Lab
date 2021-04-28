@@ -2,20 +2,18 @@
 #include <stdlib.h>
 #include <time.h>
 
- 
-void sort(int arr[], int n) {
-    int i, j;
-    for(i =0 ;i<n;i++) {
-        for(j=i+1;j<n;j++) {
-            if(arr[i]>arr[j]) {
-                arr[i] = arr[i]+arr[j];
-                arr[j] = arr[i]-arr[j];
-                arr[i] = arr[i]-arr[j];
-             }
+void sort(int arr[], int n) 
+{ 
+    int i, j; 
+    for (i = 0; i < n-1; i++)     
+      
+    for (j = 0; j < n-i-1; j++) 
+        if (arr[j] > arr[j+1]) {
+            arr[i] = arr[i]+arr[j];
+            arr[j] = arr[i]-arr[j];
+            arr[i] = arr[i]-arr[j];
         }
-    }
-}
-
+} 
 
 void generateArray(int arr[],int n) {
     for(int i=0;i<n;i++)
