@@ -111,7 +111,7 @@ void onebyonePermutation(int n)
     for (int i = 0; i < n; i++)
         dir[i] =  left;
   
-    // for generating permutations in the order, (n-1)! number of times.
+    // for generating permutations in the order, (n)! -1 number of times.
     for (int i = 1; i < fact(n); i++)
         printOnePermutation(a, dir, n);
 }
