@@ -14,7 +14,7 @@ void heapify(int arr[], int size, int i)
     if (right < size && arr[right] > arr[largest])  
         largest = right;  
     
-    if (largest != i)  
+    if (largest != i)
     {
         temp = arr[i];  
         arr[i]= arr[largest];   
@@ -51,9 +51,10 @@ void test(int arr[], int n) {
     }
     printf("  SORTED  \n");
 }
+
 void main() {
     srand(time(NULL));
-    int n =0;
+    int n = 0;
     int s,e,step;
     printf("-----Heap Sort-----\n\n");
     printf("Enter start length : ");
