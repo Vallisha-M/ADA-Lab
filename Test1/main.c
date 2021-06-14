@@ -10,8 +10,6 @@ int search(int a[], int n, int mobile)
         if (a[i] == mobile)
            return i + 1; 
 }
-  
-
 
 int getMobileElement(int a[], int dir[], int n)
 {
