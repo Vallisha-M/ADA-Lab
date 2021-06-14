@@ -1,5 +1,3 @@
-// CPP program to print all permutations using
-// Johnson and Trotter algorithm.
 #include <stdio.h>
 
   
