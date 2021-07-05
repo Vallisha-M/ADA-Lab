@@ -7,7 +7,7 @@
 
 void printSolution(int dist[][V]);
 
-void floydWarshall (int graph[][V])
+void floyd (int graph[][V])
 {
     int dist[V][V], i, j, k;
 
@@ -65,6 +65,6 @@ int main()
                         {INF, INF, INF, 0}
                       };
 
-    floydWarshall(graph);
+    floyd(graph);
     return 0;
 }

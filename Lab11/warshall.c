@@ -40,13 +40,6 @@ void printSolution(int reach[][V])
     {
         for (int j = 0; j < V; j++)
         {
-              /* because "i==j means same vertex"
-               and we can reach same vertex
-               from same vertex. So, we print 1....
-               and we have not considered this in
-               Floyd Warshall Algo. so we need to
-               make this true by ourself
-               while printing transitive closure.*/
               if(i == j)
                 printf("1 ");
               else
